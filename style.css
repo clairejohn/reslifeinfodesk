@@ -7,15 +7,16 @@
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f4efe1;
 }
 
 .sidebar{
     position: fixed;
     top: 0px;
-    left: -250px;
+    left: 0px;
     width: 250px;
     height: 100%;
-    background-color: aliceblue;
+    background-color: #DACCE6;
     transition:all 300ms ease-in-out;
 }
 
@@ -32,7 +33,7 @@ body{
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: brown;
+    background-color: #ad9c65;
     transform:translateY(-50%);
     transition:all 300ms ease-in-out;
 }
@@ -52,15 +53,15 @@ body{
     display: block;
     padding: 15px 10px;
     text-decoration: none;
-    color:blueviolet;
+    color:#595959;
     cursor: pointer;
-    border-bottom:1px solid cadetblue;
+    border-bottom:1px solid #450084;
 }
 
 .sidebar .links a.active,
 .sidebar .links a:hover{
-   background-color: black;
-   color: blue;
+   background-color: #B599CE;
+   color: #333333;
 }
 
 .sidebar .links a i{
