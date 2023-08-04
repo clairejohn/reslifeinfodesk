@@ -2,13 +2,14 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Easy Tutorials</title>
+        <title>Paul Jennings Rooms 105-117 </title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <h2 style="text-align: center;">Paul Jennings Rooms 105-117</h2>
         <div class="sidebar active">
-            <div class="toggle-btn">
+            <div class="toggle-btn" onclick="toggleSidebar()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -16,21 +17,48 @@
             <div class="links">
                 <a href="#">
                     <i class="fa fa-home"></i>
-                    Home
+                    <strong>Home</strong>
                 </a>
                 <a href="#">
                     <i class="fa fa-tachometer"></i>
-                    Dashboard
+                    <strong>Schedule ICON w/Mar</strong>
                 </a>
                 <a href="#">
                     <i class="fa fa-line-chart"></i>
-                    Analytics
+                    <strong>Mental Health Resources</strong>
                 </a>
                 <a href="#">
                     <i class="fa fa-bell"></i>
-                    Notification
+                    <strong>Links to JMU ORL Policy</strong>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <strong>Test your ORL knowledge</strong>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <strong>Program Flyers</strong>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <strong>Athena Photos</strong>
                 </a>
             </div>
         </div>
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.classList.toggle("active");
+                if (sidebar.classList.contains("active")) {
+                    sidebar.style.left = "0";
+                } else {
+                    sidebar.style.left = "-250px";
+                }
+            }
+        </script>
     </body>
 </html>
+
